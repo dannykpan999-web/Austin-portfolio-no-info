@@ -38,11 +38,11 @@ export const personalInfo: PersonalInfo = {
     ]
   },
   contact: {
-    email: "austinkbartlettwork@gmail.com",
-    phone: "(248) 925-2139",
-    location: "Royal Oak, Michigan 48067",
+    email: "",
+    phone: "",
+    location: "",
     github: "",
-    linkedin: "https://linkedin.com/in/austin-bartlett-in/"
+    linkedin: ""
   },
   education: {
     degree: "Bachelor of Science in Computer Science",

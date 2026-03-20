@@ -15,7 +15,7 @@ interface ChatMessage {
 }
 
 const buildSystemPrompt = (): string => {
-  const { name, title, bio, contact, education } = personalInfo;
+  const { name, title, bio, education } = personalInfo;
 
   const experienceText = experienceData
     .map(
@@ -40,10 +40,6 @@ const buildSystemPrompt = (): string => {
 **Name:** ${name.first} ${name.last}
 **Title:** ${title}
 **Bio:** ${bio.short}
-**Email:** ${contact.email}
-**Phone:** ${contact.phone}
-**Location:** ${contact.location}
-**LinkedIn:** ${contact.linkedin || 'N/A'}
 **Education:** ${education.degree} from ${education.institution} (${education.year})
 
 **Experience:**

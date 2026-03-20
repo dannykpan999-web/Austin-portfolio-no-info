@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Send, Mail, MapPin, Linkedin, Github, FileText, Phone, MessageCircle, User } from 'lucide-react';
+import { Send, FileText } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { toast } from 'sonner';
 import { personalInfo } from '@/data/personalInfo';
@@ -122,27 +122,7 @@ const Contact: React.FC = () => {
                 <h3 className="text-xl sm:text-2xl font-display font-bold text-white mb-4 sm:mb-6">Contact Information</h3>
                 
                 <div className="space-y-4 sm:space-y-6">
-                  <div className="flex items-center gap-3 sm:gap-4">
-                    <div className="p-2 sm:p-3 bg-white/10 backdrop-blur-sm rounded-lg border border-white/20">
-                      <Mail size={20} className="text-white sm:w-6 sm:h-6" />
-                    </div>
-                    <div>
-                      <p className="text-white/90 text-sm sm:text-base md:text-lg font-body font-medium">Email</p>
-                      <a href={`mailto:${personalInfo.contact.email}`} className="text-white hover:text-white/90 transition-colors text-sm sm:text-base md:text-lg break-all font-body">
-                        {personalInfo.contact.email}
-                      </a>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-center gap-3 sm:gap-4">
-                    <div className="p-2 sm:p-3 bg-white/10 backdrop-blur-sm rounded-lg border border-white/20">
-                      <MapPin size={20} className="text-white sm:w-6 sm:h-6" />
-                    </div>
-                    <div>
-                      <p className="text-white/90 text-sm sm:text-base md:text-lg font-body font-medium">Location</p>
-                      <p className="text-white text-sm sm:text-base md:text-lg font-body">{personalInfo.contact.location}</p>
-                    </div>
-                  </div>
+                  <p className="text-white/80 text-sm sm:text-base font-body">Feel free to reach out through the form or LinkedIn.</p>
                 </div>
               </div>
               
@@ -150,14 +130,6 @@ const Contact: React.FC = () => {
                 <h3 className="text-xl sm:text-2xl font-display font-bold text-white mb-4 sm:mb-6">Connect With Me</h3>
                 
                 <div className="space-y-3 sm:space-y-4">
-                  <a href={personalInfo.contact.linkedin} target="_blank" rel="noopener noreferrer"
-                    className="flex items-center gap-3 sm:gap-4 p-3 sm:p-4 bg-white/10 backdrop-blur-sm hover:bg-white/20 border border-white/20 hover:border-white/30 transition-all duration-300 hover:-translate-y-1">
-                    <div className="p-1.5 sm:p-2 bg-white/15">
-                      <Linkedin size={20} className="text-white sm:w-6 sm:h-6" />
-                    </div>
-                    <span className="text-white text-sm sm:text-base md:text-lg font-body font-medium">LinkedIn</span>
-                  </a>
-
                   <a href="/resume/resume.pdf" download="Austin-Bartlett-Resume.pdf"
                     className="flex items-center gap-3 sm:gap-4 p-3 sm:p-4 bg-white/10 backdrop-blur-sm hover:bg-white/20 border border-white/20 hover:border-white/30 transition-all duration-300 hover:-translate-y-1">
                     <div className="p-1.5 sm:p-2 bg-white/15">

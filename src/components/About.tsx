@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { motion, useAnimation, useInView } from 'framer-motion';
-import { MapPin, Mail, GraduationCap, FileText, User, Briefcase, Code2, Award } from 'lucide-react';
+import { GraduationCap, FileText } from 'lucide-react';
 import { useTheme } from '@/contexts/ThemeContext';
 import { personalInfo } from '@/data/personalInfo';
 import BackgroundEffects from './BackgroundEffects';
@@ -87,28 +87,6 @@ const About: React.FC<AboutProps> = () => {
                   <h4 className="text-xl font-display font-bold text-white mb-6 pb-4 border-b border-gray-700/50">Personal Information</h4>
                   
                   <div className="space-y-6">
-                    <div className="flex items-start gap-4">
-                      <div className="p-3 bg-white/10 backdrop-blur-sm rounded-lg border border-white/20">
-                        <MapPin className="text-white" size={20} />
-                      </div>
-                      <div className="flex-1">
-                        <h5 className="text-base font-body font-semibold text-white mb-1">Location</h5>
-                        <p className="text-white/80 text-sm font-body">{personalInfo.contact.location}</p>
-                      </div>
-                    </div>
-                    
-                    <div className="flex items-start gap-4">
-                      <div className="p-3 bg-white/10 backdrop-blur-sm rounded-lg border border-white/20">
-                        <Mail className="text-white" size={20} />
-                      </div>
-                      <div className="flex-1">
-                        <h5 className="text-base font-body font-semibold text-white mb-1">Email</h5>
-                        <a href={`mailto:${personalInfo.contact.email}`} className="text-white/80 hover:text-white transition-colors text-sm break-all font-body">
-                          {personalInfo.contact.email}
-                        </a>
-                      </div>
-                    </div>
-                    
                     <div className="flex items-start gap-4">
                       <div className="p-3 bg-white/10 backdrop-blur-sm rounded-lg border border-white/20">
                         <GraduationCap className="text-white" size={20} />

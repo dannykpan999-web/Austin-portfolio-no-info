@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Github, Linkedin, Mail, MapPin, FileText, Phone, MessageCircle, User, Briefcase, Code2 } from 'lucide-react';
+import { FileText } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { personalInfo } from '../data/personalInfo';
 import { useTheme } from '@/contexts/ThemeContext';
@@ -53,10 +53,6 @@ const Footer: React.FC = () => {
               <p className={`font-body leading-relaxed mb-6 ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>
                 Senior Full-Stack Engineer building scalable, high-performance web and mobile apps, focused on clean architecture and maintainability.
               </p>
-              <div className={`flex items-center justify-center md:justify-start gap-2 ${isDark ? 'text-gray-400' : 'text-gray-600'}`}>
-                <MapPin size={16} />
-                <span className="font-body text-sm">{personalInfo.contact.location}</span>
-              </div>
             </motion.div>
 
             {/* Quick links */}
@@ -80,22 +76,6 @@ const Footer: React.FC = () => {
             <motion.div variants={itemVariants} className="md:col-span-1 text-center md:text-left">
               <h4 className={`text-lg font-display font-semibold mb-4 ${isDark ? 'text-white' : 'text-gray-800'}`}>Connect</h4>
               <div className="space-y-3">
-                <a 
-                  href={`mailto:${personalInfo.contact.email}`}
-                  className={`flex items-center justify-center md:justify-start gap-3 transition-colors duration-300 ${isDark ? 'text-gray-400 hover:text-white' : 'text-gray-600 hover:text-blue-600'}`}
-                >
-                  <Mail size={16} />
-                  <span className="font-body text-sm">{personalInfo.contact.email}</span>
-                </a>
-                <a
-                  href={personalInfo.contact.linkedin}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={`flex items-center justify-center md:justify-start gap-3 transition-colors duration-300 ${isDark ? 'text-gray-400 hover:text-white' : 'text-gray-600 hover:text-blue-600'}`}
-                >
-                  <Linkedin size={16} />
-                  <span className="font-body text-sm">LinkedIn</span>
-                </a>
                 <a
                   href="/resume/resume.pdf"
                   download="Austin-Bartlett-Resume.pdf"
