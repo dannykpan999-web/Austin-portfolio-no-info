@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(tail:*)",
+      "Bash(cd /e/HarukaLeonhart-Portfolio && npx vite build 2>&1)",
+      "Bash(cd /e/HarukaLeonhart-Portfolio && npx vercel --prod 2>&1)",
+      "Bash(cd:*)",
+      "WebFetch(domain:austin-batlett.vercel.app)",
+      "Bash(curl:*)",
+      "Bash(cd /e/HarukaLeonhart-Portfolio && rm -rf node_modules/.vite && npx vite build 2>&1)",
+      "WebFetch(domain:austinbartlett.io)"
+    ]
+  }
+}
