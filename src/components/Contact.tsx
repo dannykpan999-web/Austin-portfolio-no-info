@@ -1,6 +1,6 @@
 
 import React, { useState } from 'react';
-import { Send, FileText } from 'lucide-react';
+import { Send } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { toast } from 'sonner';
 import { personalInfo } from '@/data/personalInfo';
@@ -128,16 +128,6 @@ const Contact: React.FC = () => {
               
               <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-8 flex-1 shadow-2xl">
                 <h3 className="text-xl sm:text-2xl font-display font-bold text-white mb-4 sm:mb-6">Connect With Me</h3>
-                
-                <div className="space-y-3 sm:space-y-4">
-                  <a href="/resume/resume.pdf" download="Austin-Bartlett-Resume.pdf"
-                    className="flex items-center gap-3 sm:gap-4 p-3 sm:p-4 bg-white/10 backdrop-blur-sm hover:bg-white/20 border border-white/20 hover:border-white/30 transition-all duration-300 hover:-translate-y-1">
-                    <div className="p-1.5 sm:p-2 bg-white/15">
-                      <FileText size={20} className="text-white sm:w-6 sm:h-6" />
-                    </div>
-                    <span className="text-white text-sm sm:text-base md:text-lg font-body font-medium">Download Resume</span>
-                  </a>
-                </div>
                 
                 <div className="mt-6 sm:mt-8">
                   <p className="text-white/90 text-sm sm:text-base md:text-lg leading-relaxed font-body">

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { ChevronDown, FileText } from 'lucide-react';
+import { ChevronDown } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { useTheme } from '@/contexts/ThemeContext';
 import { personalInfo } from '@/data/personalInfo';
@@ -127,21 +127,6 @@ const Hero: React.FC = () => {
             </h2>
           </motion.div>
           
-          
-          <motion.div
-            className="flex justify-center gap-4 sm:gap-6 md:gap-8 mb-12 sm:mb-14 md:mb-16"
-            variants={itemVariants}
-          >
-            <motion.a
-              href="/resume/resume.pdf"
-              download="Austin-Bartlett-Resume.pdf"
-              className="p-3 sm:p-4 transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/20 hover:border-white/30"
-              whileHover={{ scale: 1.02 }}
-              whileTap={{ scale: 0.98 }}
-            >
-              <FileText size={24} className="sm:w-7 sm:h-7 text-white hover:text-blue-400 transition-colors" />
-            </motion.a>
-          </motion.div>
           
           <motion.button 
             onClick={scrollToNextSection}
